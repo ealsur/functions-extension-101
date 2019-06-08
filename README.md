@@ -8,12 +8,12 @@ Each step is represented by one project that references the previous one, so any
 
 The guide is comprised of the following steps:
 
-* [Step 1](./step1/README.md) - Define your attribute
-* [Step 2](./step2/README.md) - Create your connector or service
-* [Step 3](./step3/README.md) - Define your Collector
-* [Step 4](./step4/README.md) - The glue that binds it together
-* [Step 5](./step5/README.md) - Activating the extension
+* [Step 1](./src/step1/README.md) - Define your attribute
+* [Step 2](./src/step2/README.md) - Create your connector or service
+* [Step 3](./src/step3/README.md) - Define your Collector
+* [Step 4](./src/step4/README.md) - The glue that binds it together
+* [Step 5](./src/step5/README.md) - Activating the extension
 
 Each step contains the smallest piece of code possible to understand the base concepts required to build your own Output Binding.
 
-At the end, there is a [sample Azure Functions project](./sample) that consumes the result of *Step 5* and can be used for testing.
+At the end, there is a [sample Azure Functions project](./src/sample) that consumes the result of *Step 5* and can be used for testing.
