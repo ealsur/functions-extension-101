@@ -15,7 +15,7 @@ So in the `IExtensionConfigProvider.Initialize` sample, you will see:
 
 Which basically says: For the `CosmosDBAttribute` (consumer using `[CosmosDB]`), I want to bind a Collector (`rule.BindToCollector`), and I want to use a `CosmosDBBindingConverter` to convert from the Attribute to an `IAsyncCollector`, and I want its constructor, to receive `this` (the Config Provider) as parameter.
 
-You will notice `<CosmosDBBindingOpenType>` in the same line, which basically applies a filter on the possible `T` types the user can use when binding to `IAsyncCollector<T>`. The implementation of the filter (and how you can apply your own) is also in the [sample](./CosmosDBBindingConfigProvider.cs).
+You will notice `<CosmosDBBindingOpenType>` in the same line, which basically applies a filter on the possible `T` types the user can use when binding to `IAsyncCollector<T>`. The implementation of the filter (and how you can apply your own) is also in the [sample](./CosmosDBBindingConfigProvider.cs#L69).
 
 The `IExtensionConfigProvider` implementation will receive a `ICosmosDBBindingCollectorFactory` instance in the constructor, which will use to create new connector or service instances when it's needed:
 
