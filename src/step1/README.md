@@ -30,7 +30,7 @@ And these parameters will let the consumer, when declaring the binding, to pass 
 
 You will notice in the sample the usage of `[AutoResolve]`, this decorator lets the Azure Functions runtime know that we want consumers to be able to apply [binding patterns](https://docs.microsoft.com/azure/azure-functions/functions-bindings-expressions-patterns). For example, if the consumer passes `%configName%`, then the Runtime will try to resolve the value by looking up a **Function Application Setting** by the name `configName`.
 
-And `[ConnectionString]` will be able to provide binding patterns, but also provide [Azure Key Vault integration](https://azure.microsoft.com/blog/simplifying-security-for-serverless-and-web-apps-with-azure-functions-and-app-service/).
+And `[ConnectionString]` adds the possibility of checking for those values also on the Connection Strings section of the settings.
 
 ## A note about types
 
