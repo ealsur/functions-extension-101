@@ -11,8 +11,8 @@ namespace CosmosDBBinding.Sample
     {
         [FunctionName("CosmosDBSample")]
         public static async Task Run(
-            [TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, 
-            [CosmosDB("your database", "your container", ConnectionStringSetting = "your connection string setting name")] IAsyncCollector<MyClass> CosmosDBCollector,
+            [TimerTrigger("*/5 * * * * *")]TimerInfo myTimer, 
+            [CosmosDB("%CosmosDBDatabase%", "%CosmosDBContainer%", ConnectionStringSetting = "CosmosDBConnectionString")] IAsyncCollector<MyClass> CosmosDBCollector,
             ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
