@@ -1,6 +1,6 @@
 # How to create your own Azure Function bindings!
 
-Watch it live! 👇
+Watch the recording! 👇
 
 [![Watch the On Dotnet episode](http://img.youtube.com/vi/vKrUn9qiUI8/0.jpg)](http://www.youtube.com/watch?v=vKrUn9qiUI8 "On Dotnet Episode")
 
