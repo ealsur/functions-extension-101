@@ -1,5 +1,7 @@
 # How to create your own Azure Function bindings!
 
+[![Watch the On Dotnet episode](http://img.youtube.com/vi/vKrUn9qiUI8/0.jpg)](http://www.youtube.com/watch?v=vKrUn9qiUI8 "On Dotnet Episode")
+
 This repository acts as a live learning sample of how you can create your own custom **Azure Functions Output Binding** in **5 easy steps**.
 
 Each step is represented by one project that references the previous one, so any change you make in one, will be picked up by the next one.
